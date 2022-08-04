@@ -49,6 +49,7 @@ const App = () => {
       const address = networkData.address;
       const contract = new web3.eth.Contract(abi, address);
       setContract(contract);
+      console.log(contract);
       return contract;
     }
   };
